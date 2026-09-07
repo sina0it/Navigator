@@ -1,0 +1,6 @@
+{
+  "name": "Sina Navigator",
+  "description": "A complete, production-ready navigation application with real routing, live map, Sina AI assistant, multilingual support, and route planning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

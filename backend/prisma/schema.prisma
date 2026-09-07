@@ -1,0 +1,141 @@
+// Sina Navigator Prisma Schema - PostgreSQL Database
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  MODERATOR
+  USER
+}
+
+model User {
+  id                 Int                 @id @default(autoincrement())
+  username           String              @unique
+  email              String              @unique
+  passwordHash       String
+  fullName           String
+  role               UserRole            @default(USER)
+  isActive           Boolean             @default(true)
+  preferredLanguage  String              @default("en")
+  darkMode           Boolean             @default(true)
+  voiceGuidance      Boolean             @default(true)
+  avoidTolls         Boolean             @default(false)
+  avoidHighways      Boolean             @default(false)
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+
+  favorites          FavoritePlace[]
+  recentDestinations RecentDestination[]
+  routes             RouteHistory[]
+  savedTrips         SavedTrip[]
+  notifications      Notification[]
+  auditLogs          AuditLog[]
+
+  @@map("users")
+}
+
+model FavoritePlace {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name      String
+  address   String
+  category  String   @default("FAVORITE")
+  latitude  Float
+  longitude Float
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("favorite_places")
+}
+
+model RecentDestination {
+  id         Int      @id @default(autoincrement())
+  userId     Int
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name       String
+  address    String
+  latitude   Float
+  longitude  Float
+  travelMode String   @default("DRIVING")
+  visitedAt  DateTime @default(now())
+
+  @@map("recent_destinations")
+}
+
+model RouteHistory {
+  id              Int      @id @default(autoincrement())
+  userId          Int
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  originName      String
+  originLat       Float
+  originLng       Float
+  destinationName String
+  destinationLat  Float
+  destinationLng  Float
+  distanceKm      Float
+  durationMinutes Int
+  travelMode      String   @default("DRIVING")
+  calculatedAt    DateTime @default(now())
+
+  @@map("route_history")
+}
+
+model SavedTrip {
+  id               Int      @id @default(autoincrement())
+  userId           Int
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title            String
+  description      String?
+  travelMode       String   @default("DRIVING")
+  totalDistanceKm  Float    @default(0.0)
+  totalDurationMin Int      @default(0)
+  stopsJson        String   @default("[]")
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@map("saved_trips")
+}
+
+model Notification {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  message   String
+  type      String   @default("INFO")
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("notifications")
+}
+
+model AuditLog {
+  id        Int      @id @default(autoincrement())
+  userId    Int?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  userEmail String
+  action    String
+  details   String
+  ipAddress String   @default("127.0.0.1")
+  createdAt DateTime @default(now())
+
+  @@map("audit_logs")
+}
+
+model AppSetting {
+  id        Int      @id @default(autoincrement())
+  key       String   @unique
+  value     String
+  updatedAt DateTime @updatedAt
+
+  @@map("app_settings")
+}
