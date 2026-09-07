@@ -1,4 +1,128 @@
 # 🧭 Sina Navigator
+# 🇬🇧 English
+
+**Sina Navigator** is a modern and intelligent navigation platform designed by combining **maps, GPS, location search, route planning, trip management, and artificial intelligence**.
+
+### 🚀 Features
+
+📍 **Location Services**
+
+* Get the user's current location
+* Display the current position on the map
+* Track location while moving
+
+🗺️ **Maps & Navigation**
+
+* Interactive map
+* Origin and destination selection
+* Address and place search
+* Route calculation
+* Distance and estimated travel time
+* Driving, walking and cycling support when provided by the routing service
+* Route visualization
+
+🔎 **Place Search**
+
+* Cities and streets
+* Restaurants
+* Hotels
+* Shops
+* Hospitals
+* Gas stations
+* Airports
+* Points of interest and nearby locations
+
+⭐ **Favorite Places**
+
+* Save locations
+* Home and Work locations
+* Edit and delete saved places
+* Quick navigation to saved locations
+
+🕘 **Navigation History**
+
+* Recent destinations
+* Previous routes
+* Quick access to recent destinations
+
+🤖 **Sina AI**
+
+* Intelligent travel assistant
+* Destination recommendations
+* Nearby place recommendations
+* Trip planning
+* Multi-stop trip planning
+* Intelligent route and destination assistance
+
+🧳 **Trip Planner**
+
+* Create trips
+* Add multiple destinations
+* Remove and reorder stops
+* Save and manage trips
+
+🌍 **Multilingual Support**
+
+* 🇮🇷 Persian
+* 🇬🇧 English
+* 🇸🇦 Arabic
+* 🇨🇳 Chinese
+* 🇷🇺 Russian
+* Full RTL support for Persian and Arabic
+
+🌙 **Modern UI**
+
+* Light and Dark Mode
+* Mobile-first design
+* Fully responsive interface
+* Modern professional design
+* Simple and fast user experience
+
+👤 **User Accounts**
+
+* Registration and Login
+* User profile
+* Personal settings
+* Language and theme preferences
+* Saved location management
+
+🖥️ **Admin Panel**
+
+* Administrative dashboard
+* User management
+* Usage statistics
+* Notification management
+* Activity monitoring
+* Application settings
+* Role-based access control
+
+🔐 **Security**
+
+* Secure authentication
+* Authorization and access control
+* Input validation
+* API protection
+* Secure secret and API key management
+* Audit logging
+* Rate limiting
+* HTTPS-ready architecture
+
+⚡ **Scalable Architecture**
+
+* Modern frontend
+* Independent backend
+* REST API
+* PostgreSQL
+* Modular architecture
+* Ready for Native Android integration
+* Server deployment ready
+
+### 🛠️ Technology
+
+`TypeScript` • `JavaScript` • `REST API` • `PostgreSQL` • `AI` • `Maps` • `Routing` • `Authentication` • `Responsive UI`
+
+### 🎯 Project Goal
+
 
 ## 🇮🇷 فارسی
 
@@ -130,130 +254,6 @@
 📧 **Email:** [sinananderi203@gmail.com](mailto:sinananderi203@gmail.com)
 
 ---
-
-# 🇬🇧 English
-
-**Sina Navigator** is a modern and intelligent navigation platform designed by combining **maps, GPS, location search, route planning, trip management, and artificial intelligence**.
-
-### 🚀 Features
-
-📍 **Location Services**
-
-* Get the user's current location
-* Display the current position on the map
-* Track location while moving
-
-🗺️ **Maps & Navigation**
-
-* Interactive map
-* Origin and destination selection
-* Address and place search
-* Route calculation
-* Distance and estimated travel time
-* Driving, walking and cycling support when provided by the routing service
-* Route visualization
-
-🔎 **Place Search**
-
-* Cities and streets
-* Restaurants
-* Hotels
-* Shops
-* Hospitals
-* Gas stations
-* Airports
-* Points of interest and nearby locations
-
-⭐ **Favorite Places**
-
-* Save locations
-* Home and Work locations
-* Edit and delete saved places
-* Quick navigation to saved locations
-
-🕘 **Navigation History**
-
-* Recent destinations
-* Previous routes
-* Quick access to recent destinations
-
-🤖 **Sina AI**
-
-* Intelligent travel assistant
-* Destination recommendations
-* Nearby place recommendations
-* Trip planning
-* Multi-stop trip planning
-* Intelligent route and destination assistance
-
-🧳 **Trip Planner**
-
-* Create trips
-* Add multiple destinations
-* Remove and reorder stops
-* Save and manage trips
-
-🌍 **Multilingual Support**
-
-* 🇮🇷 Persian
-* 🇬🇧 English
-* 🇸🇦 Arabic
-* 🇨🇳 Chinese
-* 🇷🇺 Russian
-* Full RTL support for Persian and Arabic
-
-🌙 **Modern UI**
-
-* Light and Dark Mode
-* Mobile-first design
-* Fully responsive interface
-* Modern professional design
-* Simple and fast user experience
-
-👤 **User Accounts**
-
-* Registration and Login
-* User profile
-* Personal settings
-* Language and theme preferences
-* Saved location management
-
-🖥️ **Admin Panel**
-
-* Administrative dashboard
-* User management
-* Usage statistics
-* Notification management
-* Activity monitoring
-* Application settings
-* Role-based access control
-
-🔐 **Security**
-
-* Secure authentication
-* Authorization and access control
-* Input validation
-* API protection
-* Secure secret and API key management
-* Audit logging
-* Rate limiting
-* HTTPS-ready architecture
-
-⚡ **Scalable Architecture**
-
-* Modern frontend
-* Independent backend
-* REST API
-* PostgreSQL
-* Modular architecture
-* Ready for Native Android integration
-* Server deployment ready
-
-### 🛠️ Technology
-
-`TypeScript` • `JavaScript` • `REST API` • `PostgreSQL` • `AI` • `Maps` • `Routing` • `Authentication` • `Responsive UI`
-
-### 🎯 Project Goal
 
 The goal of **Sina Navigator** is to build a modern, intelligent, and scalable navigation platform that can evolve with advanced features such as **smart routing, personalized recommendations, trip planning, real-time data, and a native Android application**.
 
