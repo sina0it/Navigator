@@ -122,7 +122,14 @@
 `TypeScript` • `JavaScript` • `REST API` • `PostgreSQL` • `AI` • `Maps` • `Routing` • `Authentication` • `Responsive UI`
 
 ### 🎯 Project Goal
+---
 
+The goal of **Sina Navigator** is to build a modern, intelligent, and scalable navigation platform that can evolve with advanced features such as **smart routing, personalized recommendations, trip planning, real-time data, and a native Android application**.
+
+👨‍💻 **Developer:** Sina Naderi
+📧 **Email:** [sinananderi203@gmail.com](mailto:sinananderi203@gmail.com)
+
+<img width="1536" height="1024" alt="photo_5834440801214206244_w" src="https://github.com/user-attachments/assets/4c1af97e-2d58-4c76-87ea-499ee61d828b" />
 
 ## 🇮🇷 فارسی
 
@@ -253,9 +260,4 @@
 👨‍💻 **Developer:** Sina Naderi
 📧 **Email:** [sinananderi203@gmail.com](mailto:sinananderi203@gmail.com)
 
----
 
-The goal of **Sina Navigator** is to build a modern, intelligent, and scalable navigation platform that can evolve with advanced features such as **smart routing, personalized recommendations, trip planning, real-time data, and a native Android application**.
-
-👨‍💻 **Developer:** Sina Naderi
-📧 **Email:** [sinananderi203@gmail.com](mailto:sinananderi203@gmail.com)
